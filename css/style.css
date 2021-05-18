@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Exo, Krona One, Helvetica;
+}
+
+header {
+    background-color: #201c1c;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+    max-height: 100px;
+}
+
+header ul {
+    float: right;
+    color: rgb(121, 118, 118);
+}
+
+header li {
+    display: inline-block;
+    padding: 25px 40px 0px 25px;
+}
+
+.aboutHeading {
+    padding-left: 200px;
+    padding-bottom: 0px;
+    font-size: 24px;
+}
+
+.line:before {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: grey;
+    position: absolute;
+    left: auto;
+    right: 0;
+  }
+
+footer {
+    height: 100px;
+    background-color: #201c1c;
+    padding: 5px
+}
+
+footer ul {
+    float: left;
+    color: rgb(121, 118, 118);
+}
+
+footer li {
+    display: inline-block;
+    padding:  25px 0px 25px 40px;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "copy right";
+    grid-gap: 40px;
+}
+
+.copy {
+    grid-area: copy;
+    text-align: left;
+}
+
+.headshot {
+max-height: 300px;
+width: auto;
+}
+
+button {
+    padding: 15px;
+    background-color: grey;
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+    border-width: 3px;
+}
